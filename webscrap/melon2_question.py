@@ -4,7 +4,6 @@ import requests
 class Melon(object):
     url = 'https://www.melon.com/chart/index.htm?dayTime='
     headers = {'User-Agent': 'Mozilla/5.0'}
-    # class_name = []
 
     def set_url(self, time):
         self.url = requests.get(f'{self.url}{time}', headers=self.headers).text
@@ -33,8 +32,6 @@ class Melon(object):
             elif menu == '1':
                  melon.set_url(input('스크래핑할 날짜 입력: '))
             elif menu == '2':
-                # melon.class_name.append('ellipsis rank01')
-                # melon.class_name.append('ellipsis rank02')
                 melon.get_ranking()
             else:
                 print('Wrong Number')
