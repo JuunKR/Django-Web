@@ -16,22 +16,34 @@ class Melon(object):
         ls1 = soup.find_all("div",{'class':"ellipsis rank02"})
         ls2 = soup.find_all("div", {'class': "ellipsis rank01"})
         for i in ls1:
-            self.ls1.append({i.find("a").text})
-            print(f'{i.find("a").text}')
+            self.ls1.append(i.find("a").text)
+            print(i.find("a").text)
         for i in ls2:
-            self.ls2.append({i.find("a").text})
-            print(f'{i.find("a").text}')
+            self.ls2.append(i.find("a").text)
+            print(i.find("a").text)
+
+    def df_to_csv(self):
+        path = './data/bugs2.csv'
+        self.df.to_csv(path, sep=',', na_rep='NaN')
 
     def dict(self):
+        for i, j in enumerate(self.title_ls):
+            self.dic[f'{i+1}위'] = [j, self.artist_ls[i]]
+        print('딕셔너리 출력')
+        print(self.dict)
+
+
+
         # for i in range(0, len(self.ls2)):
         #     self.dic[i] = self.ls1[i]
         # print(self.dic)
 
 
-        # 방법 2. zip
-        for i, j in zip(self.ls1, self.ls2):
-            self.dic[i] = j
-        print(self.dic)
+        # # 방법 2. zip
+        #
+        # for i, j in zip(self.ls1, self.ls2):
+        #     self.dic[i] = j
+        # print(self.dic)
 
         '''
         for i, j in enumerate(self.ls2):

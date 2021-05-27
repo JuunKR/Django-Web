@@ -7,9 +7,13 @@
 '''
 Python has Five standard types
 Scalar
+    Varialbe
     Numbers : int, float, complex
     String :  str
-Vector : List, Tuple, Dictionary, set
+
+    Constant
+Vector : List(Variable), Tuple(Constant),    인덱스 시퀀스
+        Dictionary(key), set(keyX, 중복 불가) 인덱스 x해쉬구조
 '''
 
 # Scalar (Number, String)

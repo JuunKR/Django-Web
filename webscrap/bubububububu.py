@@ -30,12 +30,12 @@ class Bugs(object):
     def dict_to_dataframe(self):
         dt = self.dict
 
-        self.df = pd.DataFrame.from_dict(dt,'index')
+        self.df = pd.DataFrame.from_dict(dt,'index',columns=['Title','Artist'])
 
         print(self.df)
 
     def df_to_csv(self):
-        path = './data/bugs.csv'
+        path = './data/bugs2.csv'
         self.df.to_csv(path, sep=',', na_rep='NaN')
 
 
@@ -47,7 +47,7 @@ class Bugs(object):
                 self.dict[i] = j
         '''
         for i, j in enumerate(self.title_ls):
-            self.dict[j] = self.artist_ls[i]
+            self.dict[f'{i+1}위'] = [j, self.artist_ls[i]]
         print('딕셔너리 출력')
         print(self.dict)
 
