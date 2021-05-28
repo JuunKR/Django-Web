@@ -23,9 +23,9 @@ class Bugs(object):
         for i in ls1:
             self.title_ls.append(i.find("a").text)
             print(f'{i.find("a").text}')
-        for i in ls2:
-            self.artist_ls.append(i.find("a").text)
-            print(f'{i.find("a").text}')
+        # for i in ls2:
+        #     self.artist_ls.append(i.find("a").text)
+        #     print(f'{i.find("a").text}')
 
     def dict_to_dataframe(self):
         dt = self.dict

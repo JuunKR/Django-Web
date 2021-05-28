@@ -48,7 +48,7 @@ class VectorTest(object):
 
     @staticmethod
     def main():
-        v = VectorTest
+        v = VectorTest()
 
         while 1:
             menu = input('List: 1.Create 2. Read 3.Update 4.Delete\n'

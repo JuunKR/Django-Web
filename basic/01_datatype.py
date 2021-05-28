@@ -3,6 +3,8 @@
 # *******************
 #  ------ Atom ------
 # *******************
+a = 0
+
 
 '''
 Python has Five standard types
@@ -12,8 +14,9 @@ Scalar
     String :  str
 
     Constant
+    
 Vector : List(Variable), Tuple(Constant),    인덱스 시퀀스
-        Dictionary(key), set(keyX, 중복 불가) 인덱스 x해쉬구조
+        Dictionary(key), set(keyX, 중복 불가) 인덱스x 해쉬구조
 '''
 
 # Scalar (Number, String)
@@ -26,7 +29,6 @@ print(hello[2:5]) # String 은 list 라는 증명
 '''
 
 # ************* List CRUD Example *************
-
 ls = ['abcd', 786, 2.23, 'join', 70.2] # ls = Atom 이랑 같은 차원?, Vector 급부터가 객체, 객체급 부터가 Atom, 기능을 부여하는 것은 Atom 부터, 객체는 내부적으로 메소드를 갖음 즉 기능
 tinylist = [123, 'join']
 
