@@ -2,6 +2,7 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import pandas as pd
+
 class NaverMovie(object):
 
     url = 'https://movie.naver.com/movie/sdb/rank/rmovie.nhn'
@@ -39,9 +40,9 @@ if __name__ == '__main__':
     naver = NaverMovie()
     naver.class_name = 'tit3'
     naver.scrap(naver.class_name)
-    naver.insert_dict()
-    naver.dict_to_dataframe()
-    naver.df_to_csv()
+    # naver.insert_dict()
+    # naver.dict_to_dataframe()
+    # naver.df_to_csv()
 
 
 
