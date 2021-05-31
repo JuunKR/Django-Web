@@ -9,7 +9,8 @@ import requests
 class NaverStock(object):
     url = 'https://finance.naver.com/item/sise_day.nhn?code=&page=1'
     driver_path = 'C:\\Program Files\\Google\\Chrome\\chromedriver'
-    code = '005930'
+    code = '000660' \
+           '.'
     date_ls = []
     price_ls = []
     url_ls = []
