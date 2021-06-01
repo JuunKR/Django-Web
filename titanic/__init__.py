@@ -5,6 +5,7 @@ from titanic.templates.plot import Plot
 
 if __name__ == '__main__':
  #c p 앞에 놓는 이유 노출되면 해킹될 위험이있다
+    controller = Controller()
     while 1:
         menu = input('0.exit\n'
                      '1. visualization\n'
@@ -22,7 +23,6 @@ if __name__ == '__main__':
 
 
         elif menu == '2':
-            controller = Controller()
             controller.modeling('train.csv', 'test.csv')
 
 

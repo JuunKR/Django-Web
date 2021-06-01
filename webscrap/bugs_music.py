@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 class BugsMusic(object):
-
     url = ''
     class_name = []
 
