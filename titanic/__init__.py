@@ -27,9 +27,10 @@ if __name__ == '__main__':
 
 
         elif menu == '3':
-            pass
+            df = controller.learning('train.csv', 'test.csv')
         elif menu == '4':
-            pass
+            controller.submit('train.csv', 'test.csv')
+
         else:
             print('Wrong Number')
             continue

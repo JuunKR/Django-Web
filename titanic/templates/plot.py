@@ -9,8 +9,8 @@ import seaborn as sns
 
 class Plot(object): #플롯은 차트를 의미함
 
-    dataset: object = DataSet()
-    service: object = Service()
+    dataset = DataSet()
+    service = Service()
 
     def __init__(self, fname):
         self.entity = self.service.new_model(fname)
